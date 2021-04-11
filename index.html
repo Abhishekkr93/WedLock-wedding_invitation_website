@@ -120,18 +120,21 @@
       <div class="w3-container w3-white w3-center">
         <h1 class="w3-wide">CAN YOU COME?</h1>
         <p>We really hope you can make it.</p>
-        <form>
-          <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+        <form action="http://localhost:5000" method="POST">
+          <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name" required>
+          <p><i>Sincerely, Puneet & Aayushi</i></p>
+          <div class="w3-row">
+            <div class="w3-full">
+              <select name="coming" id="coming" style="width:80%; padding: 10px; color: white; background-color: blueviolet;">
+                <option value="volvo">Going</option>
+                <option value="saab">Can't come</option>
+              </select>
+            </div>
+            <div class="w3-full" style="margin-top: 50px;">
+              <button onclick="document.getElementById('id01').style.display='none'" type="submit" class="w3-button w3-block w3-blue">Submit</button>
+            </div>
+          </div>
         </form>
-        <p><i>Sincerely, Puneet & Aayushi</i></p>
-        <div class="w3-row">
-          <div class="w3-half">
-            <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
-          </div>
-          <div class="w3-half">
-            <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
-          </div>
-        </div>
       </div>
     </div>
   </div>

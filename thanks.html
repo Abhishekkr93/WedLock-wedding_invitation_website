@@ -1,0 +1,73 @@
+
+<html>
+    <title>Wedding Invitation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/9186319117.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+     
+    body,h1,h2{font-family: "Georgia", serif}
+    body, html {height: 100%}
+    p {line-height: 2}
+    .bgimg, .bgimg2 {
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .bgimg {background-image: url("https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80")}
+    .bgimg2 {background-image: url("https://i.pinimg.com/564x/1e/58/85/1e5885503f834a4c64bcdd8aff8371f4.jpg")}
+  
+    </style>
+    <body onload="myFunction()">
+    
+    <!-- Header / Home-->
+    <header class="w3-display-container w3-wide bgimg" id="home">
+      <div class="w3-display-middle w3-text-white w3-center">
+        <h1 class="w3-jumbo" style="text-shadow: 3px 3px #000000;" >Puneet & Aayushi</h1>
+        <h2 style="text-shadow: 2px 2px #000000;">are getting married on</h2>
+        <h2 style="text-shadow: 2px 2px #000000; "><b>Saturday, 24.04.2021</b></h2>
+      </div>
+    </header>
+    
+    <!-- Navbar (sticky bottom) -->
+    <div class="w3-bottom w3-hide-small">
+      <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+        <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+        <a href="#us" style="width:25%" class="w3-bar-item w3-button">Puneet & Aayushi</a>
+        <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
+        <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+      </div>
+    </div>
+  
+
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+        <div class="w3-container w3-white w3-center">
+          <h1 class="w3-wide">Thanks</h1>
+          <p>Form submited</p>
+            <div class="w3-full" style="margin-top: 50px;">
+              <button onclick="window.location.href='/'" type="submit" class="w3-button w3-block w3-blue">Go back to Home</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+      <p>Made with ❤️ by <a href="https://www.instagram.com/amazing__ak/" title="Abhishek Kumar" target="_blank" class="w3-hover-text-red"> Abhishek Kumar</a></p>
+    </footer>
+    <div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+
+    <script>
+      function myFunction() {
+        document.getElementById('id01').style.display='block'
+      }
+    </script>
+    
+    </body>
+    </html>
+    
+  
